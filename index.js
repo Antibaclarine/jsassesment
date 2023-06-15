@@ -42,4 +42,48 @@ let ancestral=new Ancestral("animation","Mother","Mary")
 let storytype=new Storytype("animation","Mary","Joseph",50,"childish",5)
 console.log(storytype.type_story())
         
+
+class Recipe{
+    constructor(ingredients,preparation_time,cooking_method,nutritional){
+        this.ingredients=ingredients
+        this.preparation_time=preparation_time
+        this.cooking_method=cooking_method
+        this.nutritional=nutritional
+    }
+    recipe_details(){
+        return 'spicy food are prepared with ${this.ingredients} within ${this.preparation_time} and has ${this.nutritional}'
+    }
+}
+    class Morrocan extends Recipe{
+        constructor(ingredients,preparation_time,cooking_method,nutritional){
+        this.ingredients=ingredients
+        this.preparation_time=preparation_time
+        this.cooking_method=cooking_method
+        this.nutritional=nutritional
         
+                return "morrocan uses spicy ingredients"
+        
+    }
+}
+    class Ethiopian extends Recipe{
+        constructor(ingredients,preparation_time,cooking_method,nutritional){
+        this.ingredients=ingredients
+        this.preparation_time=preparation_time
+        this.cooking_method=cooking_method
+        this.nutritional=nutritional 
+        }
+        ingredients_used(){
+         return "ethiopian uses spicy ingredients"
+        }
+    }
+    class Nigerian extends Recipe{
+        constructor(ingredients,preparation_time,cooking_method,nutritional){
+            this.ingredients=ingredients
+            this.preparation_time=preparation_time
+            this.cooking_method=cooking_method
+            this.nutritional=nutritional 
+            }
+            ingredients_used(){
+                 return "nigerian does not use spicy ingredients"
+            }
+    }

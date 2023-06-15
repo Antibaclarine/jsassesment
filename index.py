@@ -35,5 +35,36 @@ class Storytype(Ancestral):
 ancestral=Ancestral("animation","Mother","Mary")
 storytype=Storytype("animation","Mary","Joseph",50,"childish",5)
 print(storytype.type_story())
+   
+
+#determining class Recipe
+#subclass
+
+class Recipe:
+    def __init__(self,ingredients,preparation_time,cooking_method,nutritional):
+        self.ingredients=ingredients
+        self.preparation_time=preparation_time
+        self.cooking_method=cooking_method
+        self.nutritional=nutritional
+    def recipe_details(self):
+        return f"spicy food are prepared with {self.ingredients} within {self.preparation_time} and has {self.nutritional}"
+    class Morrocan (Recipe):
+        def __init__(self,ingredients,preparation_time,cooking_method,nutritional):
+         super().__init__(ingredients,preparation_time,cooking_method,nutritional)
+         return f"morrocan uses spicy ingredients"
+     
+    class Ethiopian (Recipe):
+        def __init__(self,ingredients,preparation_time,cooking_method,nutritional):
+         super().__init__(ingredients,preparation_time,cooking_method,nutritional)
+         return f"ethiopian uses spicy ingredients"
+     
+    class Nigerian (Recipe):
+        def __init__(self,ingredients,preparation_time,cooking_method,nutritional):
+         super().__init__(ingredients,preparation_time,cooking_method,nutritional)
+         return f"nigerian does not use spicy ingredients"
         
+            
+            
+        
+             
         
